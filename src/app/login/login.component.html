@@ -1,0 +1,18 @@
+<form class="modal-content animate" action="/action_page.php" method="post">
+  <div class="container">
+      <div class="row">
+          <label for="uname"><b>Username</b></label><br>
+          <input type="text" [(ngModel)]="loginDetails.emailId" placeholder="Enter Username" name="uname" required>
+      </div>
+      <div class="row">
+          <label for="psw"><b>Password</b></label>
+          <input type="password" [(ngModel)]="loginDetails.password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <div class="row">
+          <button type="submit" (click)="login(loginDetails)">Login</button>
+      </div>
+      <div class="row" >
+        <button type="button"  class="cancelbtn" style="margin-left: 235px;" (click)="openManageUser()">Register</button>
+      </div>
+  </div>
+</form>

@@ -1,0 +1,36 @@
+<form class="modal-content animate" action="/action_page.php" method="post">
+    <!-- <h2 style="text-align: center">{{title}}</h2> -->
+    <div class="container">
+        <div class="row">
+            <label for="uname"><b>First Name</b></label><br>
+            <input type="text" [(ngModel)]="userDetails.firstName" placeholder="Enter Full Name" name="uname" required>
+        </div>
+
+        <div class="row">
+            <label for="uname"><b>Middle Name</b></label><br>
+            <input type="text" [(ngModel)]="userDetails.middleName" placeholder="Enter Full Name" name="uname" required>
+        </div>
+
+        <div class="row">
+            <label for="uname"><b>Last Name</b></label><br>
+            <input type="text" [(ngModel)]="userDetails.lastName" placeholder="Enter Full Name" name="uname" required>
+        </div>
+
+        <div class="row">
+            <label for="email"><b>Email</b></label>
+            <input type="text" [(ngModel)]="userDetails.email" placeholder="Enter Email" name="email" required>
+        </div>
+
+        <div class="row">
+            <label for="password"><b>Password</b></label>
+            <input type="password" [(ngModel)]="userDetails.password" placeholder="Enter Email" name="email" required>
+        </div>
+
+        <div class="row">
+            <button type="button" style="float: left" class="cancelbtn" (click)="cancelRegistration()">Cancel</button>
+            <button type="button" style="float: right" class="success" (click)="registerUser(userDetails)">Save</button>
+        </div>
+
+    </div>
+
+</form>
